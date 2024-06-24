@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test")
 
-test.only("E2E", async ({ browser }) => {
+test("E2E", async ({ browser }) => {
 
     const prdName = "HP Spectre XT Pro UltraBook";
     const prdQty = "12";
