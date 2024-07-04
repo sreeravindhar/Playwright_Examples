@@ -1,0 +1,65 @@
+{
+  "cookies": [
+    {
+      "name": ".Nop.Antiforgery",
+      "value": "CfDJ8EcPreBDTLZEuaAPyfUP1RkAJIExxUpb84zW4s9x1-XlEvklOMFUgSyDBnwkF_P97hqfkkGI2R7ntjpLUnFxOGgh7Lun9sgjvoSONDtQfDR2BbzQEesRzPXpH-Ggcnkf1KVW5uoZmJ8IZeCPRjYl8tY",
+      "domain": "demo.nopcommerce.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1361698443.1719832980",
+      "domain": ".nopcommerce.com",
+      "path": "/",
+      "expires": 1754392981.874046,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".Nop.Authentication",
+      "value": "CfDJ8EcPreBDTLZEuaAPyfUP1RlZUAjW1UZg-t-83NQqoL7EfFnFwbpGUVJkmAO6r_Z0ek55cQYMrMdKeBqsOZIYIUYSC_XOhe_0YiAFzc3Q8PSk5XN7aXTsJDxh4gaSO9AZPA_BCtv6QJlucA5SpPeq2Q-EMXCJzyTDo7Y1TcIelQpvSdXbAke8FVhfsOzPsllSOWcgeg6BAyd7oZ1NkvZZ4nQKtCLxX0GMRD616qm-wQZMNV8Anrla942bqhdGmbYvcj_B2dLZeg0TKAV0Ue0JY3lVPyBza4z02ZXv9XuXFZMtPSeblCmtNWzKlNxA3fg_FK-XcLjxuHAEsNGIFWhuOXW5ic1QrA_8-8OK_JmCAQqhzmmO9GE_kF4OIGdU2HsY1KQSquN1hd6q_lPV28_ucPlw9kdcuELHQm9Ou_b29tk5OJPF1BcFxNsQgJou_5LGwq7IWZUjQBFUAvAAfZjHXv74XjOdq70fcuJOtSf16tDdVO14qUFhNt735J9HIoII5pV4R0-oORel3dphsLBW5oryffALy_ZzF_18_uPZtOZVNHGm9uds2Bp9eUihQ5aaiA",
+      "domain": "demo.nopcommerce.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".Nop.Customer",
+      "value": "91660596-8e90-42da-911f-0b3757c286d3",
+      "domain": "demo.nopcommerce.com",
+      "path": "/",
+      "expires": 1751368981.699453,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": ".Nop.Culture",
+      "value": "c%3Den-US%7Cuic%3Den-US",
+      "domain": "demo.nopcommerce.com",
+      "path": "/",
+      "expires": 1751368981.699553,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_SCT41TW89V",
+      "value": "GS1.1.1719832980.1.1.1719832981.0.0.0",
+      "domain": ".nopcommerce.com",
+      "path": "/",
+      "expires": 1754392981.872801,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
