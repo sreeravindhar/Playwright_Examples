@@ -7,7 +7,7 @@ const orderData = {orders:[{country:"India",productOrderedId:"6581cade9fd99c85e8
 test("API_Calls", async () =>{
 
     const api = await request.newContext();
-    const loginRes = await api.post("https://rahulshettyacademy.com/api/ecom/auth/login" ,
+    const loginRes = await api['post']("https://rahulshettyacademy.com/api/ecom/auth/login" ,
         {
             
             data : loginData
