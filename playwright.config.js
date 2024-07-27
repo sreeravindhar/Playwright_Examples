@@ -1,5 +1,6 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig, devices, webkit } = require('@playwright/test');
+const { trace } = require('console');
 
 /**
  * Read environment variables from file.
@@ -12,22 +13,71 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
-
+  retries:1,
 
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
+  projects: [
 
-    browserName: 'chromium',
-    headless: false,
-    viewport: { width: 1500, height: 735 },
-    trace: 'on',
-    screenshot: 'on',
-  
+    {
+      timeout:50 *1000,
+      name: "Firefox",
+      use: {
+        ...devices['Desktop Firefox'],
+        headless: false,
+        trace: 'on',
+        screenshot: 'on',
+        permissions:['geolocation'],
+        ignoreHTTPSErrors: true,
+        launchOptions: {
+          firefoxUserPrefs: {
+            // use fake audio and video media
+            "media.navigator.streams.fake": true,
+            "permissions.default.microphone": 1,
+            "permissions.default.camera": 1,
+          },
+        }
+
+      },
+
+    }
+    ,
+
+    {
+      name: "Chrome",
+      use: {
+
+        browserName: 'chromium',
+        headless: false,
+        viewport: { width: 1500, height: 735 },
+        trace: 'on',
+        screenshot: 'on',
+        ignoreHTTPSErrors: true,
+        
+
+      },
+
+    }
+    , 
+    {
+
+        name: "MobileView",
+        use: {
+
+          browserName: "chromium",
+          headless: false,
+          ...devices['Pixel 7'],
+          trace: 'on',
+          screenshot:'on',
+          video:'on'
+
+          
+        }
 
 
+    }
 
-  },
+  ]
 
 
   /* Run your local dev server before starting the tests */

@@ -1,0 +1,12 @@
+[
+    {   
+        "scenario": "Negative",
+        "username": "dummy",
+        "password": "Summa256"
+    },
+    {
+        "scenario": "Postive",
+        "username": "standard_user",
+        "password": "secret_sauce"
+    }
+]
