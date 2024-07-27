@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+
+    "LoginTest":"npx playwright test tests/MultiLoginTest.spec.js --project=Chrome --reporter=line,allure-playwright"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
