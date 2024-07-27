@@ -48,7 +48,7 @@ module.exports = defineConfig({
       use: {
 
         browserName: 'chromium',
-        headless: false,
+        headless: true,
         viewport: { width: 1500, height: 735 },
         trace: 'on',
         screenshot: 'on',
